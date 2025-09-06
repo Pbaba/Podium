@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Lexend%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Press+Start+2P%3Aital%2Cwght%400%2C400" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+        :root {
+            --primary-color: #3b82f6;
+            --secondary-color: #10b981;
+            --dark-bg: #111827;
+            --dark-surface: #1f2937;
+            --dark-border: #374151;
+            --dark-text-primary: #f9fafb;
+            --dark-text-secondary: #9ca3af;
+            --accent-gold: #ffc700;
+            --accent-silver: #c0c0c0;
+            --accent-bronze: #cd7f32;
+        }
+        .font-pixel {
+            font-family: 'Press Start 2P', cursive;
+        }
+    </style>
+</head>
+<body class="bg-[var(--dark-bg)] text-[var(--dark-text-primary)]" style='font-family: Lexend, "Noto Sans", sans-serif;'>
+<div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-[var(--dark-border)] bg-[var(--dark-surface)] px-10 py-3 shadow-md">
+<div class="flex items-center gap-4 text-white">
+<div class="text-[var(--primary-color)]">
+<svg class="h-8 w-8" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-xl font-bold tracking-[-0.015em]">EduPath</h2>
+</div>
+<div class="flex flex-1 justify-center gap-8">
+<nav class="flex items-center gap-6">
+<a class="text-[var(--dark-text-secondary)] hover:text-[var(--primary-color)] text-sm font-medium transition-colors" href="#">Learn</a>
+<a class="text-[var(--dark-text-secondary)] hover:text-[var(--primary-color)] text-sm font-medium transition-colors" href="#">Teach</a>
+<a class="text-[var(--dark-text-secondary)] hover:text-[var(--primary-color)] text-sm font-medium transition-colors" href="#">Explore</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<button class="flex h-10 w-10 items-center justify-center rounded-full bg-gray-800 text-[var(--dark-text-secondary)] hover:bg-gray-700 hover:text-white transition-colors">
+<span class="material-symbols-outlined"> notifications </span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA68g3Kr60SDPW2CoN1RszhZ2io3uLuXPyn6wK74oIVopkFFC2_7FQ5PfjPLJj6IMPM7WIXQ1DFBFqrIqb-LOK802JGU9bVj0SOjnBiCBeVCLLsFwrKqxMF6XlmTsq1bhCXgZVF0CDWbpUCN9KqY6s1jFRKphHcKD8i5QhamFlfFasx9zVBj08OhaqJowSn7mEFxcIWzRCuAytmGVr48B9QxE3xrS90joYBr9THhyrQRTE94ienLA_rUbSrlnj9CPw1aA7RS0_sauNb");'></div>
+</div>
+</header>
+<main class="flex-1 px-40 py-10">
+<div class="mx-auto max-w-5xl">
+<div class="mb-8 flex items-start justify-between">
+<div>
+<h1 class="text-5xl font-extrabold tracking-tight text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)] font-pixel">Leaderboard</h1>
+<p class="mt-2 text-lg text-[var(--dark-text-secondary)]">The ultimate challenge awaits!</p>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[var(--dark-text-secondary)]"> wb_sunny </span>
+<label class="relative inline-flex cursor-pointer items-center">
+<input checked="" class="peer sr-only" id="dark-mode-toggle" type="checkbox"/>
+<div class="peer h-6 w-11 rounded-full bg-gray-600 after:absolute after:start-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-[var(--primary-color)] peer-checked:after:translate-x-full peer-checked:after:border-white rtl:peer-checked:after:-translate-x-full peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-800"></div>
+</label>
+<span class="material-symbols-outlined text-[var(--primary-color)]"> dark_mode </span>
+</div>
+</div>
+<div class="mb-8 flex justify-center">
+<div class="flex w-full max-w-md rounded-full bg-[var(--dark-surface)] p-1 shadow-inner">
+<label class="flex w-1/2 cursor-pointer items-center justify-center rounded-full py-3 text-base font-bold transition-all has-[:checked]:bg-gradient-to-r has-[:checked]:from-[var(--primary-color)] has-[:checked]:to-blue-400 has-[:checked]:text-white has-[:checked]:shadow-lg text-[var(--dark-text-secondary)]">
+<span class="material-symbols-outlined mr-2"> public </span>
+<span class="truncate">Global</span>
+<input checked="" class="sr-only" name="leaderboard-scope" type="radio" value="Global"/>
+</label>
+<label class="flex w-1/2 cursor-pointer items-center justify-center rounded-full py-3 text-base font-bold transition-all has-[:checked]:bg-gradient-to-r has-[:checked]:from-[var(--secondary-color)] has-[:checked]:to-green-400 has-[:checked]:text-white has-[:checked]:shadow-lg text-[var(--dark-text-secondary)]">
+<span class="material-symbols-outlined mr-2"> group </span>
+<span class="truncate">Friends</span>
+<input class="sr-only" name="leaderboard-scope" type="radio" value="Friends"/>
+</label>
+</div>
+</div>
+<div class="space-y-4 font-pixel">
+<div class="flex items-center rounded-xl bg-gradient-to-r from-yellow-500 to-yellow-300 p-4 shadow-2xl ring-4 ring-yellow-400/50 transition-transform hover:scale-105">
+<div class="flex h-12 w-12 items-center justify-center rounded-full bg-white/20 text-3xl font-bold text-yellow-900 drop-shadow-md">
+<span class="material-symbols-outlined text-4xl text-yellow-600"> emoji_events </span>
+</div>
+<div class="ml-4 flex-1">
+<p class="text-sm font-bold text-yellow-900">Sophia Clark</p>
+<p class="text-xs font-medium text-yellow-800">1250 Points</p>
+</div>
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-1 text-yellow-900">
+<span class="material-symbols-outlined"> military_tech </span>
+<span class="font-bold text-sm">5</span>
+</div>
+<div class="text-3xl font-black text-yellow-900/80">#1</div>
+</div>
+</div>
+<div class="flex items-center rounded-xl bg-gradient-to-r from-gray-400 to-gray-200 p-4 shadow-2xl ring-4 ring-gray-300/50 transition-transform hover:scale-105">
+<div class="flex h-12 w-12 items-center justify-center rounded-full bg-white/20 text-3xl font-bold text-gray-800 drop-shadow-md">
+<span class="material-symbols-outlined text-4xl text-gray-600"> emoji_events </span>
+</div>
+<div class="ml-4 flex-1">
+<p class="text-sm font-bold text-gray-900">Ethan Miller</p>
+<p class="text-xs font-medium text-gray-700">1180 Points</p>
+</div>
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-1 text-gray-800">
+<span class="material-symbols-outlined"> military_tech </span>
+<span class="font-bold text-sm">4</span>
+</div>
+<div class="text-3xl font-black text-gray-800/80">#2</div>
+</div>
+</div>
+<div class="flex items-center rounded-xl bg-gradient-to-r from-blue-600 to-blue-400 p-4 shadow-2xl ring-4 ring-blue-500/50 transition-transform hover:scale-105 border-4 border-white/80">
+<div class="relative">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-12 ring-2 ring-white/50" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA68g3Kr60SDPW2CoN1RszhZ2io3uLuXPyn6wK74oIVopkFFC2_7FQ5PfjPLJj6IMPM7WIXQ1DFBFqrIqb-LOK802JGU9bVj0SOjnBiCBeVCLLsFwrKqxMF6XlmTsq1bhCXgZVF0CDWbpUCN9KqY6s1jFRKphHcKD8i5QhamFlfFasx9zVBj08OhaqJowSn7mEFxcIWzRCuAytmGVr48B9QxE3xrS90joYBr9THhyrQRTE94ienLA_rUbSrlnj9CPw1aA7RS0_sauNb");'></div>
+<span class="absolute -bottom-1 -right-1 flex h-6 w-6 items-center justify-center rounded-full bg-orange-500 text-xs font-bold text-white shadow-md">YOU</span>
+</div>
+<div class="ml-4 flex-1">
+<p class="text-sm font-bold text-white">Olivia Davis</p>
+<p class="text-xs font-medium text-blue-100">1120 Points</p>
+</div>
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-1 text-white">
+<span class="material-symbols-outlined"> military_tech </span>
+<span class="font-bold text-sm">6</span>
+</div>
+<div class="text-3xl font-black text-white/80">#3</div>
+</div>
+</div>
+<div class="divide-y divide-[var(--dark-border)] rounded-xl bg-[var(--dark-surface)] shadow-lg overflow-hidden">
+<div class="grid grid-cols-12 gap-4 px-6 py-4 text-[10px] font-medium text-[var(--dark-text-secondary)] transition-colors hover:bg-gray-800/50 items-center">
+<div class="col-span-1 text-center font-bold text-lg">4</div>
+<div class="col-span-5 font-semibold text-white text-xs">Noah Wilson</div>
+<div class="col-span-3 text-cyan-400 font-semibold">1050 Points</div>
+<div class="col-span-3 flex items-center justify-end gap-2 text-amber-400">
+<span class="material-symbols-outlined text-base"> military_tech </span>
+<span class="font-bold">3</span>
+</div>
+</div>
+<div class="grid grid-cols-12 gap-4 px-6 py-4 text-[10px] font-medium text-[var(--dark-text-secondary)] transition-colors hover:bg-gray-800/50 items-center">
+<div class="col-span-1 text-center font-bold text-lg">5</div>
+<div class="col-span-5 font-semibold text-white text-xs">Ava Taylor</div>
+<div class="col-span-3 text-cyan-400 font-semibold">980 Points</div>
+<div class="col-span-3 flex items-center justify-end gap-2 text-amber-400">
+<span class="material-symbols-outlined text-base"> military_tech </span>
+<span class="font-bold">5</span>
+</div>
+</div>
+<div class="grid grid-cols-12 gap-4 px-6 py-4 text-[10px] font-medium text-[var(--dark-text-secondary)] transition-colors hover:bg-gray-800/50 items-center">
+<div class="col-span-1 text-center font-bold text-lg">6</div>
+<div class="col-span-5 font-semibold text-white text-xs">Liam Moore</div>
+<div class="col-span-3 text-cyan-400 font-semibold">920 Points</div>
+<div class="col-span-3 flex items-center justify-end gap-2 text-amber-400">
+<span class="material-symbols-outlined text-base"> military_tech </span>
+<span class="font-bold">4</span>
+</div>
+</div>
+<div class="grid grid-cols-12 gap-4 px-6 py-4 text-[10px] font-medium text-[var(--dark-text-secondary)] transition-colors hover:bg-gray-800/50 items-center">
+<div class="col-span-1 text-center font-bold text-lg">7</div>
+<div class="col-span-5 font-semibold text-white text-xs">Isabella Jackson</div>
+<div class="col-span-3 text-cyan-400 font-semibold">850 Points</div>
+<div class="col-span-3 flex items-center justify-end gap-2 text-amber-400">
+<span class="material-symbols-outlined text-base"> military_tech </span>
+<span class="font-bold">6</span>
+</div>
+</div>
+<div class="grid grid-cols-12 gap-4 px-6 py-4 text-[10px] font-medium text-[var(--dark-text-secondary)] transition-colors hover:bg-gray-800/50 items-center">
+<div class="col-span-1 text-center font-bold text-lg">8</div>
+<div class="col-span-5 font-semibold text-white text-xs">Jackson White</div>
+<div class="col-span-3 text-cyan-400 font-semibold">780 Points</div>
+<div class="col-span-3 flex items-center justify-end gap-2 text-amber-400">
+<span class="material-symbols-outlined text-base"> military_tech </span>
+<span class="font-bold">3</span>
+</div>
+</div>
+<div class="grid grid-cols-12 gap-4 px-6 py-4 text-[10px] font-medium text-[var(--dark-text-secondary)] transition-colors hover:bg-gray-800/50 items-center">
+<div class="col-span-1 text-center font-bold text-lg">9</div>
+<div class="col-span-5 font-semibold text-white text-xs">Mia Harris</div>
+<div class="col-span-3 text-cyan-400 font-semibold">720 Points</div>
+<div class="col-span-3 flex items-center justify-end gap-2 text-amber-400">
+<span class="material-symbols-outlined text-base"> military_tech </span>
+<span class="font-bold">5</span>
+</div>
+</div>
+<div class="grid grid-cols-12 gap-4 px-6 py-4 text-[10px] font-medium text-[var(--dark-text-secondary)] transition-colors hover:bg-gray-800/50 items-center">
+<div class="col-span-1 text-center font-bold text-lg">10</div>
+<div class="col-span-5 font-semibold text-white text-xs">Benjamin Martin</div>
+<div class="col-span-3 text-cyan-400 font-semibold">650 Points</div>
+<div class="col-span-3 flex items-center justify-end gap-2 text-amber-400">
+<span class="material-symbols-outlined text-base"> military_tech </span>
+<span class="font-bold">4</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>

@@ -1,0 +1,173 @@
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Press+Start+2P%3Aital%2Cwght%400%2C400&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #0d9488;
+      }
+      .peer:checked ~ .peer-checked\:bg-teal-500 {
+        background-color: #14b8a6;
+      }
+      .peer:checked ~ * > .peer-checked\:translate-x-full {
+        transform: translateX(100%);
+      }
+      .peer:checked ~ * > .peer-checked\:bg-white {
+        background-color: white;
+      }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+<div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden" style='font-family: "Press Start 2P", "Noto Sans", sans-serif;'>
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-800 px-10 py-3 bg-gray-950/50 backdrop-blur-sm sticky top-0 z-10">
+<div class="flex items-center gap-4 text-gray-100">
+<div class="size-8 text-teal-400">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-gray-100 text-lg font-black leading-tight tracking-[-0.015em]">EduLearn</h2>
+</div>
+<div class="flex flex-1 justify-end items-center gap-4">
+<nav class="flex items-center gap-6">
+<a class="text-gray-400 text-xs font-medium hover:text-teal-400 transition-colors" href="#">Home</a>
+<a class="text-gray-400 text-xs font-medium hover:text-teal-400 transition-colors" href="#">Subjects</a>
+<a class="text-gray-400 text-xs font-medium hover:text-teal-400 transition-colors" href="#">Pricing</a>
+<a class="text-gray-400 text-xs font-medium hover:text-teal-400 transition-colors" href="#">About Us</a>
+</nav>
+<div class="flex items-center gap-4">
+<label class="relative inline-flex cursor-pointer items-center">
+<input checked="" class="peer sr-only" id="dark-mode-toggle" type="checkbox"/>
+<div class="peer h-6 w-11 rounded-full bg-gray-600 after:absolute after:start-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-teal-500 peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-teal-300 dark:peer-focus:ring-teal-800"></div>
+<span class="ms-3 text-xs font-medium text-gray-400">Dark Mode</span>
+</label>
+<div class="flex items-center gap-2">
+<button onclick="window.location.href='authPage.html'" class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-gray-800 text-gray-100 text-xs font-bold leading-normal tracking-[0.015em] hover:bg-gray-700 transition-colors">
+<span class="truncate">Log In</span>
+</button>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-teal-500 text-white text-xs font-bold leading-normal tracking-[0.015em] hover:bg-teal-400 transition-colors shadow-md shadow-teal-500/20">
+<span class="truncate">Sign Up</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-1">
+<div class="px-40 flex flex-1 justify-center py-20 bg-gray-900 relative overflow-hidden">
+<div class="absolute -top-20 -left-20 w-96 h-96 bg-green-500/10 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-20 -right-20 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1 z-10">
+<div class="relative overflow-hidden rounded-3xl shadow-2xl shadow-teal-500/10">
+<div class="absolute inset-0 bg-black opacity-30"></div>
+<div class="relative flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat items-center justify-center p-8 text-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBrpVxmiIGxb7Q2ziR-hcK9eYZZqEgbEkH1TvgFzbX4lI01fqZq4eKTj1t3e6XrAaSZDF5iU0_WnkFOnKkfPqMlmhsLG9ZpDKZkiTZubggO51O9kPjl1iEK77phJneH-FTMflfqPT6ZgSGdh6rAPI2vbuoIKzhAIwGIimEzjOQeU-La8MbsAfN7IMNYUIbhjjM5MZ9_VIGA6FGdDGg7yu97wVgLWKsgqLgy2xeHrcw_UdTe1E-4inOqt6LdYKxub77BmMoDyyxkkMWH");'>
+<div class="flex flex-col gap-4">
+<h1 class="text-white text-5xl font-black leading-tight tracking-tighter">Unlock Your Potential with EduLearn</h1>
+<p class="text-white/90 text-base font-normal leading-normal max-w-2xl mx-auto" style='font-family: "Noto Sans", sans-serif;'>Master math, science, and English with our engaging courses and expert instructors. Join thousands of students achieving their academic goals.</p>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-teal-500 text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-teal-400 transition-colors mt-4 shadow-lg shadow-teal-500/30">
+<span class="truncate">Get Started</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="px-40 py-20 bg-gray-950">
+<div class="max-w-[960px] mx-auto">
+<div class="flex flex-col gap-4 text-center mb-12">
+<h2 class="text-gray-100 text-4xl font-bold tracking-tighter">Comprehensive Subject Coverage</h2>
+<p class="text-gray-400 text-base leading-normal max-w-3xl mx-auto" style='font-family: "Noto Sans", sans-serif;'>Our curriculum covers a wide range of topics in math, science, and English, ensuring a well-rounded education.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="flex flex-col items-center text-center gap-4 p-8 rounded-2xl bg-gray-800/50 shadow-lg shadow-teal-500/10 hover:shadow-xl hover:shadow-teal-500/20 hover:-translate-y-2 transition-all duration-300">
+<div class="flex items-center justify-center size-16 rounded-full bg-gradient-to-br from-teal-400 to-green-500 text-white shadow-lg shadow-teal-500/20">
+<span class="material-symbols-outlined text-3xl">calculate</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-gray-100 text-xl font-bold">Math</h3>
+<p class="text-gray-400 text-xs leading-normal" style='font-family: "Noto Sans", sans-serif;'>From basic arithmetic to advanced calculus, our math courses cater to all skill levels.</p>
+</div>
+</div>
+<div class="flex flex-col items-center text-center gap-4 p-8 rounded-2xl bg-gray-800/50 shadow-lg shadow-blue-500/10 hover:shadow-xl hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300">
+<div class="flex items-center justify-center size-16 rounded-full bg-gradient-to-br from-blue-400 to-indigo-500 text-white shadow-lg shadow-blue-500/20">
+<span class="material-symbols-outlined text-3xl">science</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-gray-100 text-xl font-bold">Science</h3>
+<p class="text-gray-400 text-xs leading-normal" style='font-family: "Noto Sans", sans-serif;'>Explore biology, chemistry, physics, and more with our interactive science modules.</p>
+</div>
+</div>
+<div class="flex flex-col items-center text-center gap-4 p-8 rounded-2xl bg-gray-800/50 shadow-lg shadow-green-500/10 hover:shadow-xl hover:shadow-green-500/20 hover:-translate-y-2 transition-all duration-300">
+<div class="flex items-center justify-center size-16 rounded-full bg-gradient-to-br from-green-400 to-lime-500 text-white shadow-lg shadow-green-500/20">
+<span class="material-symbols-outlined text-3xl">book</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-gray-100 text-xl font-bold">English</h3>
+<p class="text-gray-400 text-xs leading-normal" style='font-family: "Noto Sans", sans-serif;'>Enhance your reading, writing, and communication skills with our comprehensive English program.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="px-40 py-20 bg-gray-900">
+<div class="max-w-[960px] mx-auto">
+<div class="flex flex-col gap-4 text-center mb-12">
+<h2 class="text-gray-100 text-4xl font-bold tracking-tighter">Engaging and Interactive Learning</h2>
+<p class="text-gray-400 text-base leading-normal max-w-3xl mx-auto" style='font-family: "Noto Sans", sans-serif;'>Our platform offers a variety of interactive tools and resources to make learning fun and effective.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="flex flex-col gap-4 group">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-2xl overflow-hidden shadow-lg group-hover:shadow-xl group-hover:shadow-teal-500/20 transition-all duration-300" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDMVXYxFT4d6BD3DthWd7dWsDER83IFCRSsS5-29QDogaheftskGn4ODVCCJXC8gClHUYJbu_EtGue_kQUl2rBDMm_zuz0eM5s_xH18OYpLSbPcvriP0kL2NyRyqQP9BTTKbd_qgZFSM6lQXtgYIemgKHRsNIu7CUWxjaUhYPUIvC8EeFNIBro-iCwKVkX87niiiPtwniGXcK2Ogqu9iXswjJNIAifrpnsJovwxDfWVJow6B4-xGFWD49QLrynGuJQzxKi2DIXRSWVV");'></div>
+<div class="p-2">
+<h3 class="text-gray-100 text-lg font-medium">Interactive Exercises</h3>
+<p class="text-gray-400 text-xs leading-normal" style='font-family: "Noto Sans", sans-serif;'>Practice problems with instant feedback to reinforce your understanding.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 group">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-2xl overflow-hidden shadow-lg group-hover:shadow-xl group-hover:shadow-blue-500/20 transition-all duration-300" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCAcv4dGpX4f3oPAvfYquuqM9qbsbJ1eyaVmSJY8y1XtreoOZtidO2sbWJ3DplvPnoePvHrdSybeb5yJcCpNyDoaFGENySxmdlHzYQcFNEq0zazR98HTCefetEBcx49Czb-XBWWzyBb2hSU-a4i_g_w0LMNjIrWHW-ofEWi1ZunV_lpCKon_mBY_O-KYe7VHbc7yN7mgtOD2xorUO3K1J-0twJInwiUQ5GV5gGz24JlQy9bD6V3yLWaJ5a9Qbg6knob2RPsKX3rVPz5");'></div>
+<div class="p-2">
+<h3 class="text-gray-100 text-lg font-medium">Virtual Labs</h3>
+<p class="text-gray-400 text-xs leading-normal" style='font-family: "Noto Sans", sans-serif;'>Conduct virtual experiments and explore scientific concepts in a simulated environment.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 group">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-2xl overflow-hidden shadow-lg group-hover:shadow-xl group-hover:shadow-green-500/20 transition-all duration-300" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDABTBQTtynvRu18wccCdgC6XWAMqyeRQKRaEm8jbgTnKjEZg4NkP9Nw7M8X6kmaKb0CLYtVfam5j6giUVmZHccwxgrWbmTgWc9D7AedPD9xDeIvEtf38BtjtlzD_LpZAI_KO1l0cX1PDurZBfTnoC8Ip9HopCZm1ZfHOFy4-cOfpQM5c2Ji9G9z6VHr1rwHwhU0ICXv5ycqImIO3U5Y5tmL7NZ18zUsKr0TyvjuEYwWZ9un84SiRiDzfdv7_ioXZsXdulkAjVVPG_A");'></div>
+<div class="p-2">
+<h3 class="text-gray-100 text-lg font-medium">Personalized Feedback</h3>
+<p class="text-gray-400 text-xs leading-normal" style='font-family: "Noto Sans", sans-serif;'>Receive personalized feedback from instructors to improve your performance.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="px-40 py-20 bg-gray-950">
+<div class="max-w-[960px] mx-auto text-center">
+<div class="flex flex-col gap-4">
+<h2 class="text-gray-100 text-4xl font-bold tracking-tighter">Ready to Start Your Learning Journey?</h2>
+<p class="text-gray-400 text-base leading-normal max-w-2xl mx-auto" style='font-family: "Noto Sans", sans-serif;'>Join EduLearn today and take the first step towards academic success.</p>
+</div>
+<div class="mt-8">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-teal-500 text-white text-sm font-bold leading-normal tracking-[0.015em] mx-auto hover:bg-teal-400 transition-colors shadow-lg shadow-teal-500/30">
+<span class="truncate">Sign Up Now</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-gray-900/50 py-10 border-t border-gray-800">
+<div class="max-w-[960px] mx-auto px-5 text-center">
+<div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-4 mb-6">
+<a class="text-gray-400 text-xs font-medium hover:text-teal-400 transition-colors" href="#">Terms of Service</a>
+<a class="text-gray-400 text-xs font-medium hover:text-teal-400 transition-colors" href="#">Privacy Policy</a>
+<a class="text-gray-400 text-xs font-medium hover:text-teal-400 transition-colors" href="#">Contact Us</a>
+</div>
+<p class="text-gray-500 text-xs" style='font-family: "Noto Sans", sans-serif;'>© 2023 EduLearn. All rights reserved.</p>
+</div>
+</footer>
+</div>
+</div>
+</body></html>

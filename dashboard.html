@@ -1,0 +1,250 @@
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Lexend%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Press+Start+2P" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #3b82f6;
+        --secondary-color: #10b981;
+        --background-dark: #111827;
+        --surface-dark: #1f2937;
+        --text-primary-dark: #f9fafb;
+        --text-secondary-dark: #9ca3af;
+        --border-dark: #374151;
+        --background-light: #f3f4f6;
+        --surface-light: #ffffff;
+        --text-primary-light: #111827;
+        --text-secondary-light: #6b7280;
+        --border-light: #e5e7eb;
+      }
+      .dark {
+        --background: var(--background-dark);
+        --surface: var(--surface-dark);
+        --text-primary: var(--text-primary-dark);
+        --text-secondary: var(--text-secondary-dark);
+        --border: var(--border-dark);
+      }
+      .light {
+        --background: var(--background-light);
+        --surface: var(--surface-light);
+        --text-primary: var(--text-primary-light);
+        --text-secondary: var(--text-secondary-light);
+        --border: var(--border-light);
+      }
+      .font-pixel {
+        font-family: 'Press Start 2P', cursive;
+      }
+    </style>
+</head>
+<body class="bg-[var(--background)] text-[var(--text-primary)]">
+<div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden" style='font-family: Lexend, "Noto Sans", sans-serif;'>
+<div class="layout-container flex h-full grow flex-col">
+<div class="flex flex-1">
+<aside class="w-80 bg-[var(--surface)] border-r border-[var(--border)] flex flex-col justify-between p-6">
+<div class="flex flex-col gap-8">
+<div class="flex items-center gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-12" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCRLLm0nEXzGI5WdkoVRdF6wgE93W2YUnuwc_yEH3D76t4rofvMGS5Ua6tvY-YnzYhT0HsYSWSlmpK4f57JvGoKc6pah-lr_O77ou6z2hyYGfmooovBqtkj627vHQlnznHrkv7Jc1wAZzYd3OxRxcX9QCRekY8e-xY3UAAwpBmQvm7mZ3x8CQIRCnG0edazzm6BDodbPeW9htKetOa4ctQFvzDd-fRvCdoV4OvKrWGgsI2ymixE1XgS_uD_n9u-S6b7KZXK8eXV9yQj");'></div>
+<div class="flex flex-col">
+<h1 class="text-[var(--text-primary)] text-lg font-semibold">
+                    Sophia
+                  </h1>
+<p class="text-[var(--text-secondary)] text-sm">Learner</p>
+</div>
+</div>
+<nav class="flex flex-col gap-2">
+<a class="flex items-center gap-3 px-4 py-3 rounded-xl bg-[var(--primary-color)]/20 text-[var(--primary-color)] font-medium" href="#">
+<span class="material-symbols-outlined">home</span>
+<span>Home</span>
+</a>
+<a onclick="window.location.href='learn.html'" class="flex items-center gap-3 px-4 py-3 rounded-xl text-[var(--text-secondary)] hover:bg-gray-700/50 hover:text-[var(--text-primary)] font-medium" href="#">
+<span class="material-symbols-outlined">school</span>
+<span>Learn</span>
+</a>
+<a onclick="window.location.href='quiz.html'" class="flex items-center gap-3 px-4 py-3 rounded-xl text-[var(--text-secondary)] hover:bg-gray-700/50 hover:text-[var(--text-primary)] font-medium" href="#">
+<span class="material-symbols-outlined">code</span>
+<span>Practice</span>
+</a>
+<a onclick="window.location.href='leaderboard.html'" class="flex items-center gap-3 px-4 py-3 rounded-xl text-[var(--text-secondary)] hover:bg-gray-700/50 hover:text-[var(--text-primary)] font-medium" href="#">
+<span class="material-symbols-outlined">group</span>
+<span>Community</span>
+</a>
+<a onclick="window.location.href='profile.html'" class="flex items-center gap-3 px-4 py-3 rounded-xl text-[var(--text-secondary)] hover:bg-gray-700/50 hover:text-[var(--text-primary)] font-medium" href="#">
+<span class="material-symbols-outlined">person</span>
+<span>Profile</span>
+</a>
+</nav>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-sm font-medium text-[var(--text-secondary)]">Dark Mode</span>
+<button aria-checked="true" class="relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-gray-600 transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2" id="theme-toggle" role="switch" type="button">
+<span class="translate-x-5 pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out"></span>
+</button>
+</div>
+</aside>
+<main class="flex-1 p-10 bg-gradient-to-br from-blue-900/40 via-gray-900 to-green-900/30">
+<div class="max-w-6xl mx-auto">
+<h1 class="text-5xl font-bold text-white mb-4 font-pixel">
+                Let's Play, Sophia!
+              </h1>
+<p class="text-lg text-blue-200 mb-12">Your learning adventure awaits.</p>
+<section class="mb-12">
+<h2 class="text-3xl font-bold text-white mb-6 font-pixel">
+                  Your XP
+                </h2>
+<div class="space-y-8">
+<div class="bg-[var(--surface)] p-6 rounded-2xl shadow-lg border border-blue-500/30">
+<div class="flex items-center justify-between mb-3">
+<p class="text-xl font-bold text-white">
+                        Math
+                      </p>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-yellow-400">star</span>
+<p class="font-pixel text-xl font-bold text-yellow-400">
+                          1200 XP
+                        </p>
+</div>
+</div>
+<div class="w-full bg-gray-700 rounded-full h-4 overflow-hidden">
+<div class="bg-gradient-to-r from-blue-500 to-cyan-400 h-4 rounded-full" style="width: 75%"></div>
+</div>
+</div>
+<div class="bg-[var(--surface)] p-6 rounded-2xl shadow-lg border border-green-500/30">
+<div class="flex items-center justify-between mb-3">
+<p class="text-xl font-bold text-white">
+                        Science
+                      </p>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-yellow-400">star</span>
+<p class="font-pixel text-xl font-bold text-yellow-400">
+                          850 XP
+                        </p>
+</div>
+</div>
+<div class="w-full bg-gray-700 rounded-full h-4 overflow-hidden">
+<div class="bg-gradient-to-r from-green-500 to-emerald-400 h-4 rounded-full" style="width: 50%"></div>
+</div>
+</div>
+<div class="bg-[var(--surface)] p-6 rounded-2xl shadow-lg border border-indigo-500/30">
+<div class="flex items-center justify-between mb-3">
+<p class="text-xl font-bold text-white">
+                        English
+                      </p>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-yellow-400">star</span>
+<p class="font-pixel text-xl font-bold text-indigo-400">400 XP</p>
+</div>
+</div>
+<div class="w-full bg-gray-700 rounded-full h-4 overflow-hidden">
+<div class="bg-gradient-to-r from-indigo-500 to-purple-400 h-4 rounded-full" style="width: 25%"></div>
+</div>
+</div>
+</div>
+</section>
+<section class="mb-12">
+<h2 class="text-3xl font-bold text-white mb-6 font-pixel">
+                  Completed Quests
+                </h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-[var(--surface)] rounded-2xl overflow-hidden border border-blue-500/30 group shadow-lg hover:shadow-blue-500/50 transition-all duration-300 transform hover:-translate-y-2">
+<div class="w-full h-48 bg-center bg-no-repeat bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBPpb4fsDXi5GeqG8uq-qJ2BfAbXNhf7Hi0nPL8sz32eCJc4fOX-XdXmpmIw3cGBxbhTF08GNZLyKxEIqWpQHb34MraG3B7nlZ4PHZB9eY05Yv6CtBsbfEC7JiAuhzCIlPQmb85eTPPGq2KPE4QQCpM0E4uDRHFkfKFosSWX8xRLYuaoKTrv-qDdllAziz99r3ZPxlA-iKawyUmdCOZutkFIjnIJWnTcfIkMgXc3oOLOGBps7Lv1srJShecO4OuKnlwsaY2D7fAYD0r");'></div>
+<div class="p-5">
+<p class="text-lg font-semibold text-white group-hover:text-[var(--primary-color)] transition-colors">
+                        Algebra Fundamentals
+                      </p>
+</div>
+</div>
+<div class="bg-[var(--surface)] rounded-2xl overflow-hidden border border-green-500/30 group shadow-lg hover:shadow-green-500/50 transition-all duration-300 transform hover:-translate-y-2">
+<div class="w-full h-48 bg-center bg-no-repeat bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBhJMFrxZDrzzqM9iMutpKXF1s7AhhEe8guk80jQ8Ulr_Stfu9BGu-2ftzaW7AeJmGB3NSEdRDOfHwpp7CkVeveosN2cNmSH5lwiTlDO6SgsNgkpufa5r64gKgKyJ6UrgpTyc03Fj7YHhX2D5ZER5qpDrs_rzElPxapdJ_qzhxmqwXA_9l8rbEj9-5MgGr_P6pCP69YHQ02ja3pTS4mS3oS4GVOVIZH6T5aD4zWSC-tS-YBlefh3reVANWOYV6ucHaG8BpvYgMP3Yzy");'></div>
+<div class="p-5">
+<p class="text-lg font-semibold text-white group-hover:text-[var(--secondary-color)] transition-colors">
+                        Biology Basics
+                      </p>
+</div>
+</div>
+<div class="bg-[var(--surface)] rounded-2xl overflow-hidden border border-indigo-500/30 group shadow-lg hover:shadow-indigo-500/50 transition-all duration-300 transform hover:-translate-y-2">
+<div class="w-full h-48 bg-center bg-no-repeat bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB6E4h4Ezt-5LPG7TyKrTsRgR-OxsEf8yCPIVA-B6xMvmManBdR5EDpxF-URXsyHZG_TnenW8Jp4bxJewtfvID93QrD4byS536PMwJJsECctp47xJlFZx7jx3X-ZbQuXhyqJ2HaS32H3F-DsOgXeUhqQFk8mQe3w_lZmhF6NzAxCZ3jPbsewgWWciJG9nx6DRqC3F3zw2e3htvDYyatpUQYYWA17MPU0Q2Kn_dCL0Uzc_pkAhiVx-Fwn2-Y6HHsTWS0K-VGsFPsMf3j");'></div>
+<div class="p-5">
+<p class="text-lg font-semibold text-white group-hover:text-indigo-400 transition-colors">
+                        Grammar Essentials
+                      </p>
+</div>
+</div>
+</div>
+</section>
+<section>
+<h2 class="text-3xl font-bold text-white mb-6 font-pixel">
+                  Achievements
+                </h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+<div class="bg-[var(--surface)] p-6 rounded-2xl border border-yellow-500/30 flex items-center justify-between shadow-lg hover:shadow-yellow-500/50 transition-all duration-300">
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-6xl text-yellow-400">emoji_events</span>
+<div>
+<p class="text-xl font-medium text-white">
+                          Level
+                        </p>
+<p class="font-pixel text-5xl font-bold text-white">
+                          5
+                        </p>
+</div>
+</div>
+</div>
+<div class="bg-[var(--surface)] p-6 rounded-2xl border border-green-500/30 flex items-center justify-between shadow-lg hover:shadow-green-500/50 transition-all duration-300">
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-6xl text-green-400">military_tech</span>
+<div>
+<p class="text-xl font-medium text-white">
+                          Badges
+                        </p>
+<p class="font-pixel text-5xl font-bold text-white">
+                          12
+                        </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</main>
+</div>
+</div>
+</div>
+<script>
+      const themeToggle = document.getElementById("theme-toggle");
+      const htmlEl = document.documentElement;
+      themeToggle.addEventListener("click", () => {
+        htmlEl.classList.toggle("dark");
+        htmlEl.classList.toggle("light");
+        const isDark = htmlEl.classList.contains("dark");
+        themeToggle.setAttribute("aria-checked", isDark);
+        // Toggle the switch's visual state
+        const switchKnob = themeToggle.querySelector("span");
+        if (isDark) {
+          switchKnob.style.transform = "translateX(1.25rem)"; // 5 * 0.25rem
+          themeToggle.classList.add("bg-blue-600");
+          themeToggle.classList.remove("bg-gray-200");
+        } else {
+          switchKnob.style.transform = "translateX(0)";
+          themeToggle.classList.add("bg-gray-200");
+          themeToggle.classList.remove("bg-blue-600");
+        }
+      });
+      // Initialize the toggle state based on the initial theme
+      const isDark = htmlEl.classList.contains("dark");
+      themeToggle.setAttribute("aria-checked", isDark);
+      const switchKnob = themeToggle.querySelector("span");
+      if (isDark) {
+        switchKnob.style.transform = "translateX(1.25rem)";
+        themeToggle.classList.add("bg-blue-600");
+        themeToggle.classList.remove("bg-gray-200");
+      } else {
+        switchKnob.style.transform = "translateX(0)";
+        themeToggle.classList.add("bg-gray-200");
+        themeToggle.classList.remove("bg-blue-600");
+      }
+    </script>
+</body></html>

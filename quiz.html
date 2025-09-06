@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Lexend%3Awght%40400%3B500%3B700%3B900&amp;family=Press+Start+2P%3Awght%40400" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+        :root {
+            --primary-color: #22c55e;
+            --secondary-color: #10b981;
+            --accent-color: #3b82f6;
+        }
+        .peer:checked~.peer-checked\:left-5 {
+            left: 1.25rem;
+        }
+        .peer:checked~.peer-checked\:bg-green-400 {
+            background-color: #4ade80;
+        }
+        .custom-shadow {
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2), 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .custom-shadow-sm {
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .font-pixel {
+            font-family: 'Press Start 2P', cursive;
+        }
+        .pixel-border {
+            border-style: solid;
+            border-width: 4px;
+            border-image-slice: 2;
+            border-image-width: 2;
+            border-image-repeat: stretch;
+            border-image-source: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 6 6" xml:space="preserve"><path d="M0,2h2V0h2v2h2v2H4v2H2V4H0V2z" fill="rgb(59, 130, 246)"/></svg>');
+            border-image-outset: 2;
+            position: relative;
+        }
+        @keyframes correct-answer {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
+            }
+            70% {
+                transform: scale(1.05);
+                box-shadow: 0 0 20px 10px rgba(34, 197, 94, 0);
+            }
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(34, 197, 94, 0);
+            }
+        }
+        .animate-correct {
+            animation: correct-answer 1s ease-in-out;
+        }
+        @keyframes incorrect-answer {
+            0%,
+            100% {
+                transform: translateX(0);
+            }
+            10%,
+            30%,
+            50%,
+            70%,
+            90% {
+                transform: translateX(-5px);
+            }
+            20%,
+            40%,
+            60%,
+            80% {
+                transform: translateX(5px);
+            }
+        }
+        .animate-incorrect {
+            animation: incorrect-answer 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-900">
+<div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden bg-[#0D1B2A]" style='font-family: Lexend, "Noto Sans", sans-serif;'>
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-700/50 px-10 py-4">
+<div class="flex items-center gap-3 text-white">
+<div class="w-10 h-10 flex items-center justify-center bg-gradient-to-br from-[var(--primary-color)] to-[var(--secondary-color)] text-white rounded-xl shadow-lg">
+<svg class="w-6 h-6" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="m3 3 18 18-9 9V3l9 9-18 18"></path>
+</svg>
+</div>
+<h2 class="text-white text-xl font-bold leading-tight tracking-[-0.015em]">EduLearn</h2>
+</div>
+<div class="flex items-center gap-8">
+<nav class="flex items-center gap-8">
+<a class="text-gray-400 hover:text-white transition-colors text-sm font-medium leading-normal" href="#">Home</a>
+<a class="text-white text-sm font-bold leading-normal relative" href="#">Courses <span class="absolute -top-1 -right-2.5 w-2 h-2 rounded-full bg-[var(--accent-color)]"></span></a>
+<a class="text-gray-400 hover:text-white transition-colors text-sm font-medium leading-normal" href="#">Resources</a>
+<a class="text-gray-400 hover:text-white transition-colors text-sm font-medium leading-normal" href="#">Community</a>
+</nav>
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-yellow-400">light_mode</span>
+<label class="relative inline-flex cursor-pointer items-center">
+<input class="sr-only peer" type="checkbox" value=""/>
+<div class="peer h-6 w-11 rounded-full bg-gray-600 after:absolute after:top-0.5 after:left-[2px] after:h-5 after:w-5 after:rounded-full after:bg-white after:transition-all after:content-[''] peer-checked:bg-[var(--accent-color)] peer-checked:after:translate-x-full peer-focus:outline-none"></div>
+</label>
+<span class="material-symbols-outlined text-gray-400">dark_mode</span>
+</div>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 ring-2 ring-offset-2 ring-offset-gray-900 ring-[var(--primary-color)]" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCVwyeoN4DdfFLVX2mV6IXGK8ruC2_9XKa4eQ-vGTPbhCRlbwCXZEAhZGrU9g5qmjjnHSA9xlAkZM1oPC6JZoxJRWkTRDabKMCNziFR8qMa2AdUwHGkEhF-HZAheauIhspMUo5bLd1k_PMg9-0GPpqeXy9das-aHnWA2noetwFTL0bMBULcLicXV2Ff_5cfxwDZEvn0Pu-gwY20xxL2XqfVeoE3jHr5JkkRQLSjFynPPNiitfDDnjUkYql9ndQy2Tf9uQ2iSl4gvfTN");'></div>
+</div>
+</div>
+</header>
+<main class="flex-1 w-full flex items-center justify-center py-10 px-4 sm:px-6 lg:px-8">
+<div class="w-full max-w-4xl bg-[#1A202C] pixel-border p-8 relative">
+<div class="absolute -top-10 left-1/2 -translate-x-1/2 bg-[#0D1B2A] px-6 py-2 pixel-border border-b-0">
+<h1 class="text-white tracking-tighter text-2xl font-pixel">STAGE 1: ALGEBRA</h1>
+</div>
+<div class="flex justify-between items-center mb-8 font-pixel text-lg text-white">
+<div class="flex items-center gap-3">
+<span>SCORE:</span>
+<span class="text-green-400 tracking-wider">001250</span>
+</div>
+<div class="flex items-center gap-3">
+<span>TIME:</span>
+<span class="text-yellow-400 tracking-wider">01:45</span>
+</div>
+</div>
+<div class="bg-gray-900/50 p-8 mb-8 text-center pixel-border border-accent-color">
+<p class="text-gray-300 text-2xl font-pixel mb-4">Solve for <strong>x</strong>:</p>
+<p class="text-4xl font-pixel text-green-300 tracking-wider">2x + 5 = 15</p>
+</div>
+<div class="grid grid-cols-2 gap-6 mb-8">
+<button class="font-pixel text-2xl p-6 text-white bg-gray-800 hover:bg-[var(--accent-color)] hover:text-black transition-colors duration-200 pixel-border border-gray-600">x = 3</button>
+<button class="font-pixel text-2xl p-6 text-white bg-gray-800 hover:bg-[var(--accent-color)] hover:text-black transition-colors duration-200 pixel-border border-gray-600">x = 10</button>
+<button class="font-pixel text-2xl p-6 text-white bg-gray-800 hover:bg-[var(--accent-color)] hover:text-black transition-colors duration-200 pixel-border border-gray-600 animate-correct">x = 5</button>
+<button class="font-pixel text-2xl p-6 text-white bg-gray-800 hover:bg-[var(--accent-color)] hover:text-black transition-colors duration-200 pixel-border border-gray-600 animate-incorrect">x = 7.5</button>
+</div>
+<div class="h-24 relative">
+<div class="absolute inset-0 flex items-center justify-center transition-opacity duration-500 opacity-100">
+<div class="flex items-center justify-center rounded-xl bg-green-500/20 px-6 py-4 font-pixel text-2xl tracking-wider text-green-300 ring-2 ring-green-400">
+<span class="material-symbols-outlined mr-4 text-3xl animate-pulse">star</span> CORRECT! +100 PTS
+                            </div>
+</div>
+<div class="absolute inset-0 flex items-center justify-center transition-opacity duration-500 opacity-0">
+<div class="flex items-center justify-center rounded-xl bg-red-500/20 px-6 py-4 font-pixel text-2xl tracking-wider text-red-300 ring-2 ring-red-400">
+<span class="material-symbols-outlined mr-4 text-3xl">skull</span> INCORRECT!
+                            </div>
+</div>
+</div>
+<div class="flex justify-between items-center mt-8 font-pixel text-white">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-red-500 text-4xl">favorite</span>
+<span class="material-symbols-outlined text-red-500 text-4xl">favorite</span>
+<span class="material-symbols-outlined text-gray-600 text-4xl">favorite_border</span>
+</div>
+<button class="flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] hover:from-green-500 hover:to-emerald-500 text-white tracking-widest transition-all duration-300 transform hover:scale-105 hover:shadow-2xl font-pixel pixel-border border-green-300">
+                            NEXT <span class="material-symbols-outlined">arrow_forward_ios</span>
+</button>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>

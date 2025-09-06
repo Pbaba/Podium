@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<title>EduLearn - Authentication</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;family=Lexend:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+        :root {
+            --primary-color: #22c55e;
+            --primary-color-hover: #16a34a;
+            --secondary-color: #3b82f6;
+            --accent-color: #f59e0b;
+            --background-start: #1e3a8a;
+            --background-end: #101827;
+            --card-bg: #1f2937;
+            --text-primary: #f9fafb;
+            --text-secondary: #9ca3af;
+            --input-bg: #374151;
+            --input-border: #4b5563;
+        }
+        .light-mode {
+            --primary-color: #3b82f6;
+            --primary-color-hover: #2563eb;
+            --secondary-color: #16a34a;
+            --accent-color: #ef4444;
+            --background-start: #f3f4f6;
+            --background-end: #e5e7eb;
+            --card-bg: #ffffff;
+            --text-primary: #111827;
+            --text-secondary: #4b5563;
+            --input-bg: #f3f4f6;
+            --input-border: #d1d5db;
+        }
+        body {
+            font-family: 'Lexend', sans-serif;
+            background: linear-gradient(to bottom right, var(--background-start), var(--background-end));
+            color: var(--text-primary);
+            transition: background-color 0.5s, color 0.5s;
+        }
+        .form-input {
+            @apply w-full rounded-lg border-[var(--input-border)] bg-[var(--input-bg)] py-3 px-5 text-base text-[var(--text-primary)] shadow-inner transition duration-150 ease-in-out focus:border-[var(--primary-color)] focus:ring focus:ring-[var(--primary-color)] focus:ring-opacity-50 placeholder:text-gray-500;
+            font-family: 'Press Start 2P', cursive;
+            font-size: 0.8rem;
+        }
+        .btn {
+            @apply flex w-full justify-center rounded-lg border border-transparent bg-[var(--primary-color)] px-4 py-3 text-lg font-bold text-white shadow-lg transition duration-300 ease-in-out hover:bg-[var(--primary-color-hover)] hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] focus:ring-offset-2 focus:ring-offset-[var(--card-bg)];
+            font-family: 'Press Start 2P', cursive;
+        }
+        .nav-link {
+            @apply text-base font-medium text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors;
+        }
+        .toggle-checkbox:checked {
+            @apply: right-0 border-green-400;
+            right: 0;
+            border-color: var(--primary-color);
+        }
+        .toggle-checkbox:checked+.toggle-label {
+            @apply: bg-green-400;
+            background-color: var(--primary-color);
+        }
+        .playful-heading {
+            font-family: 'Press Start 2P', cursive;
+        }
+    </style>
+</head>
+<body class="antialiased">
+<div class="relative flex min-h-screen flex-col overflow-x-hidden">
+<header class="w-full bg-black/10 backdrop-blur-sm">
+<div class="container mx-auto flex items-center justify-between px-6 py-4">
+<div class="flex items-center gap-3">
+<svg class="h-10 w-10 text-[var(--primary-color)]" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+<h1 class="playful-heading text-2xl font-bold text-[var(--text-primary)]">EduLearn</h1>
+</div>
+<nav class="hidden items-center gap-8 md:flex">
+<a class="nav-link" href="#">Home</a>
+<a class="nav-link" href="#">About</a>
+<a class="nav-link" href="#">Courses</a>
+<a class="nav-link" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<div class="hidden sm:flex items-center gap-2">
+<svg class="h-5 w-5 text-[var(--text-secondary)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+</svg>
+<div class="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
+<input class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer" id="toggle" name="toggle" onclick="document.body.classList.toggle('light-mode')" type="checkbox"/>
+<label class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer" for="toggle"></label>
+</div>
+<svg class="h-5 w-5 text-[var(--text-secondary)]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 14.95l.707-.707a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd"></path>
+</svg>
+</div>
+<a class="hidden rounded-lg px-6 py-2.5 text-sm font-semibold text-[var(--text-primary)] transition duration-150 ease-in-out hover:bg-white/10 sm:block" href="#" style="font-family: 'Press Start 2P', cursive;">
+                        Sign In
+                    </a>
+<a class="rounded-lg bg-[var(--accent-color)] px-6 py-2.5 text-sm font-semibold text-white shadow-lg transition duration-300 ease-in-out hover:scale-105 hover:brightness-110" href="#" style="font-family: 'Press Start 2P', cursive;">
+                        Sign Up
+                    </a>
+</div>
+</div>
+</header>
+<main class="flex flex-1 items-center justify-center py-12 sm:px-6 lg:px-8">
+<div class="relative w-full max-w-lg">
+<div class="absolute -top-8 -left-8 h-24 w-24 rounded-full bg-[var(--secondary-color)]/50 blur-2xl"></div>
+<div class="absolute -bottom-8 -right-8 h-24 w-24 rounded-full bg-[var(--primary-color)]/50 blur-2xl"></div>
+<div class="absolute -top-12 right-12 h-16 w-16 rounded-full bg-[var(--accent-color)]/40 blur-xl"></div>
+<div class="relative w-full space-y-8 rounded-2xl bg-[var(--card-bg)]/80 p-10 shadow-2xl backdrop-blur-lg transition-colors ring-1 ring-white/10">
+<div>
+<h2 class="playful-heading text-center text-3xl font-bold leading-9 tracking-tight text-[var(--text-primary)]">
+                            Create Account
+                        </h2>
+<p class="mt-4 text-center text-sm text-[var(--text-secondary)]" style="font-family: 'Press Start 2P', cursive;">
+                            Start your adventure!
+                        </p>
+</div>
+<form action="#" class="mt-8 space-y-6" method="POST">
+<div class="space-y-5 rounded-md">
+<div>
+<label class="sr-only" for="email-address">Email address</label>
+<input autocomplete="email" class="form-input" id="email-address" name="email" placeholder="Email address" required="" type="email"/>
+</div>
+<div>
+<label class="sr-only" for="password">Password</label>
+<input autocomplete="new-password" class="form-input" id="password" name="password" placeholder="Password" required="" type="password"/>
+</div>
+<div>
+<label class="sr-only" for="confirm-password">Confirm Password</label>
+<input autocomplete="new-password" class="form-input" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required="" type="password"/>
+</div>
+</div>
+<div class="pt-2">
+<button 
+
+onclick="window.location.href='dashboard.html'" class="btn" type="submit">
+                                Let's Go!
+                            </button>
+</div>
+</form>
+<div class="text-center text-xs">
+<a class="font-medium text-[var(--secondary-color)] hover:text-[var(--primary-color)] transition-colors duration-300" href="#" style="font-family: 'Press Start 2P', cursive; line-height: 1.5;">
+                            Already have an account? Sign in
+                        </a>
+</div>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>
